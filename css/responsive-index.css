@@ -1,0 +1,72 @@
+@media only screen and (max-width: 768px){
+    .container, .estrenos-insta, .top-3{
+        grid-template-columns:1fr;
+        width: 95%;
+    }
+
+    .video-top{
+        width: 100%;
+        height: 360px;
+    }
+
+    .img-lomasvisto img{
+        width: 80%;
+    }
+
+    .estrenos , .estrenos-shows{
+        width: 98%;
+    }
+
+    .shows img{
+        width: 90%;
+    }
+
+    .title{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+
+    .video-top{
+        height: 300px;
+    }
+
+    .contenido h1 {
+        font-size: 1.5em;
+    }
+
+    .noticias, .estrenos-shows{
+        grid-template-columns:1fr;
+    }
+}
+
+@media only screen and (max-width: 375px){
+   .shows img{
+        width: 90%;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+
+    .video-top{
+        height: 200px;
+    }
+    h1{
+        font-size: 1.6em;
+    }
+    h4{
+        font-size: 1em;
+    }
+
+    .contenido h1 {
+        font-size: 1.2em;
+    }
+
+    .contenido h2 {
+        font-size: 1em;
+    }
+
+
+}

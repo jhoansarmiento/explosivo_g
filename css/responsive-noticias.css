@@ -1,0 +1,30 @@
+@media only screen and (max-width: 768px){
+    .container, .estrenos-insta, .top-3{
+        grid-template-columns:1fr;
+        width: 95%;
+    }
+
+    .img-lomasvisto img{
+        width: 80%;
+    }
+
+    .title{
+        width: 95%;
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+
+    .noticias{
+        grid-template-columns: repeat(2,1fr);
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 650px){
+
+    .noticias{
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../css/estilos-articulo.css">
+    <!--RESPONSIVE-->
+    <link rel="stylesheet" href="../css/responsive-articulo.css">
+    <!-- MENU CSS-->
+    <link rel="stylesheet" href="../css/menu.css">
+    <!-- FOOTER CSS-->
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <!-- FONT MONTSERRAT-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">   
+    <!--FONT KARLA-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+    <!--FONT ALEGREYA-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet"> 
+
+    <!--Plugins Redes-->
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.1.0/css/all.css'>
+
+    <!--FAVICON-->
+    <link  rel="icon"   href="../recursos/favicon-32x32.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../recursos/favicon/apple-touch-icon.png">
+
+    <!--ETIQUETAS META-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="description" content="Así lo dejo saber la artista colombiana en sus redes sociales luciendo su nueva adquisición, nada mas y nada menos que un FERRARI Spider 812 GTS del 2021, en estados unidos solo hay 2 unidades en las calles lo que lo hace un coche más exclusivo." />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="content-language" content="es" />
+	<meta name="keywords" content="karol g se compra un ferrari, que ferrari se compro karol g, nuevo ferrari de karol g"/><!--AÑADE PALABRAS CLAVES-->
+	<meta name ="author" content ="Explosivo G, Entertainment"/>
+    <meta name="theme-color" content="#000000"/>
+    
+    <!-- OpenGraph -->
+	<meta property="og:url" content="https://explosivog.com/2021/karol-g-se-compra-un-ferrari-me-aburri-de-la-jeepeta-y-me-compre-un-makinon"/>
+	<meta property="og:title" content="KAROL G se compra un Ferrari: “me aburrí de la jeepeta y me compré un MAKINON”  | Explosivo G"/>
+	<meta property="og:image" content="../images/karolg-ferrari.jpg"/>
+	<meta property="og:type" content="website"/>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125010864-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-125010864-1');
+    </script>
+    
+    <title>KAROL G se compra un Ferrari: “me aburrí de la jeepeta y me compré un MAKINON”  | Explosivo G</title>
+</head>
+<body>
+    	<!-- caja contenedor de logo, menu, redes -->
+        <header class="header">
+            <div class="header_content d-flex align-items-center justify-content-center">
+                <!--Logo-->
+                <div class="logo"><a href="https://explosivog.com"><img src="../recursos/logo.png"></a></div>
+                <!--Menu ordenador-->
+                <form id="Menu-ordenador" v-cloak>
+                    <nav class="menu_ordenador">
+                        <ul class="d-flex d-flex align-items-center justify-content-center justify-content">
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                            </li> 
+                        </ul>
+                    </nav>      
+                </form>
+                <!-- Hamburguesa -->
+                <div class="hamburger ml-auto">
+                   MENÚ 
+                    <div class="d-flex flex-column align-items-end justify-content-between">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <!--redes-->
+                <div class="redes-escritorio">	
+                    <section>
+                        <div class="social"> 
+                            <div class="margen-responsive-redes-4x4">   
+                                <a href="https://www.instagram.com/explosivog/?hl=es-la" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a> 
+                                <a href="https://www.facebook.com/explosivog/" target="_blank">
+                                   <i class="fab fa-facebook-f"></i></i>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCcKdOMQykOmAls4bJX2moOg" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://open.spotify.com/user/apwdmpx6lr962qnukmk3chluc" target="_blank">
+                                   <i class="fab fa-spotify"></i></i>
+                                </a>
+                            </div>
+                        </div>
+                    </section>	
+                </div>
+            </div>
+        </header>
+        <!--Menu Responsive-->
+        <div class="menu">
+            <div>
+                <div class="menu_overlay"></div>
+                <div class="menu_container">
+                    <nav class="caja-redes-responsive">
+                       <!--redes-->
+                        <div class="redes-responsive">	
+                            <section>
+                                <div class="social"> 
+                                    <a href="https://www.instagram.com/explosivog/?hl=es-la" target="_blank">
+                                      <i class="fab fa-instagram"></i>
+                                    </a> 
+                                    <a href="https://www.facebook.com/explosivog/" target="_blank">
+                                       <i class="fab fa-facebook-f"></i></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCcKdOMQykOmAls4bJX2moOg" target="_blank">
+                                      <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://open.spotify.com/user/apwdmpx6lr962qnukmk3chluc" target="_blank">
+                                      <i class="fab fa-spotify"></i></i>
+                                    </a>
+                                </div>
+                            </section>	
+                        </div>
+                    </nav>
+                    <nav class="menu_responsive">
+                        <ul class="flex-column">
+                            <form id="Menu-responsive" v-cloak>            
+                                <li v-for="article in filteredArticles">
+                                    <a href="#" v-bind:href="article.url">
+                                       <p>{{article.title}}</p>
+                                    </a>
+                                </li>       
+                            </form>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    <br>
+    <div class="container">
+        <h1>KAROL G se compra un Ferrari: “me aburrí de la jeepeta y me compré un MAKINON” </h1>
+        <br><hr>
+        <h5>por <a href="">JHOAN SARMIENTO</a></h5>
+        <h5 class="fecha">Feb 20, 2021</h5>
+        <img class="imagen-noticia" src="../images/karolg-ferrari.jpg" alt="" style="padding: 10PX 0;">
+    </div>
+    <div class="parrafos">
+        <p class="estilo-1">Así lo dejo saber la artista colombiana en sus redes sociales luciendo su nueva adquisición, 
+            nada mas y nada menos que un FERRARI Spider 812 GTS del 2021, en estados unidos solo hay 2 unidades en las 
+            calles lo que lo hace un coche más exclusivo. </p>
+        <br>
+        <p> <i>ya son 14 años soñando y trabajando y ... pues si ... Vale la pena</i>, escribió en su cuenta de INSTAGRAM. </p>
+        <br>
+        <div align="center"><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CLh1cdDhEF_/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CLh1cdDhEF_/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CLh1cdDhEF_/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de LOCATION 🌵 (@karolg)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+        <br>
+        <p>Con un motor V12 de 800 CV (caballos de vapor) alcanza una velocidad máxima de 340 kilómetros por hora lo que 
+            lo hace un auto muy rápido, aunque no el más rápido del mercado. Días anteriores el artista dominicano <a href="https://explosivog.com/2021/bugatti-chiron-pur-sport-el-nuevo-lujo-del-alfa">el 
+                alfa adquirió un BUGATTI CHIRON PUR SPORT</a> que alcanza una velocidad máxima de 490 km/h.</p>
+        <br>
+        <p>La colombiana se muestra muy feliz por estos días luego de llegar a su cumpleaños numero 30 en el que encendió 
+            las redes cuando subió una foto en vestido de baño donde muestra su escultural figura que lleva trabajando 
+            durante varios meses junto a sus entrenadores que la acompañan a todos lados.</p>
+        <br>
+        <div align="center"><blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/p/CLR0bzuBLJG/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="13" style=" background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:540px; min-width:326px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);"><div style="padding:16px;"> <a href="https://www.instagram.com/p/CLR0bzuBLJG/?utm_source=ig_embed&amp;utm_campaign=loading" style=" background:#FFFFFF; line-height:0; padding:0 0; text-align:center; text-decoration:none; width:100%;" target="_blank"> <div style=" display: flex; flex-direction: row; align-items: center;"> <div style="background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 40px; margin-right: 14px; width: 40px;"></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 100px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 60px;"></div></div></div><div style="padding: 19% 0;"></div> <div style="display:block; height:50px; margin:0 auto 12px; width:50px;"><svg width="50px" height="50px" viewBox="0 0 60 60" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink"><g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g transform="translate(-511.000000, -20.000000)" fill="#000000"><g><path d="M556.869,30.41 C554.814,30.41 553.148,32.076 553.148,34.131 C553.148,36.186 554.814,37.852 556.869,37.852 C558.924,37.852 560.59,36.186 560.59,34.131 C560.59,32.076 558.924,30.41 556.869,30.41 M541,60.657 C535.114,60.657 530.342,55.887 530.342,50 C530.342,44.114 535.114,39.342 541,39.342 C546.887,39.342 551.658,44.114 551.658,50 C551.658,55.887 546.887,60.657 541,60.657 M541,33.886 C532.1,33.886 524.886,41.1 524.886,50 C524.886,58.899 532.1,66.113 541,66.113 C549.9,66.113 557.115,58.899 557.115,50 C557.115,41.1 549.9,33.886 541,33.886 M565.378,62.101 C565.244,65.022 564.756,66.606 564.346,67.663 C563.803,69.06 563.154,70.057 562.106,71.106 C561.058,72.155 560.06,72.803 558.662,73.347 C557.607,73.757 556.021,74.244 553.102,74.378 C549.944,74.521 548.997,74.552 541,74.552 C533.003,74.552 532.056,74.521 528.898,74.378 C525.979,74.244 524.393,73.757 523.338,73.347 C521.94,72.803 520.942,72.155 519.894,71.106 C518.846,70.057 518.197,69.06 517.654,67.663 C517.244,66.606 516.755,65.022 516.623,62.101 C516.479,58.943 516.448,57.996 516.448,50 C516.448,42.003 516.479,41.056 516.623,37.899 C516.755,34.978 517.244,33.391 517.654,32.338 C518.197,30.938 518.846,29.942 519.894,28.894 C520.942,27.846 521.94,27.196 523.338,26.654 C524.393,26.244 525.979,25.756 528.898,25.623 C532.057,25.479 533.004,25.448 541,25.448 C548.997,25.448 549.943,25.479 553.102,25.623 C556.021,25.756 557.607,26.244 558.662,26.654 C560.06,27.196 561.058,27.846 562.106,28.894 C563.154,29.942 563.803,30.938 564.346,32.338 C564.756,33.391 565.244,34.978 565.378,37.899 C565.522,41.056 565.552,42.003 565.552,50 C565.552,57.996 565.522,58.943 565.378,62.101 M570.82,37.631 C570.674,34.438 570.167,32.258 569.425,30.349 C568.659,28.377 567.633,26.702 565.965,25.035 C564.297,23.368 562.623,22.342 560.652,21.575 C558.743,20.834 556.562,20.326 553.369,20.18 C550.169,20.033 549.148,20 541,20 C532.853,20 531.831,20.033 528.631,20.18 C525.438,20.326 523.257,20.834 521.349,21.575 C519.376,22.342 517.703,23.368 516.035,25.035 C514.368,26.702 513.342,28.377 512.574,30.349 C511.834,32.258 511.326,34.438 511.181,37.631 C511.035,40.831 511,41.851 511,50 C511,58.147 511.035,59.17 511.181,62.369 C511.326,65.562 511.834,67.743 512.574,69.651 C513.342,71.625 514.368,73.296 516.035,74.965 C517.703,76.634 519.376,77.658 521.349,78.425 C523.257,79.167 525.438,79.673 528.631,79.82 C531.831,79.965 532.853,80.001 541,80.001 C549.148,80.001 550.169,79.965 553.369,79.82 C556.562,79.673 558.743,79.167 560.652,78.425 C562.623,77.658 564.297,76.634 565.965,74.965 C567.633,73.296 568.659,71.625 569.425,69.651 C570.167,67.743 570.674,65.562 570.82,62.369 C570.966,59.17 571,58.147 571,50 C571,41.851 570.966,40.831 570.82,37.631"></path></g></g></g></svg></div><div style="padding-top: 8px;"> <div style=" color:#3897f0; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:550; line-height:18px;"> Ver esta publicación en Instagram</div></div><div style="padding: 12.5% 0;"></div> <div style="display: flex; flex-direction: row; margin-bottom: 14px; align-items: center;"><div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(0px) translateY(7px);"></div> <div style="background-color: #F4F4F4; height: 12.5px; transform: rotate(-45deg) translateX(3px) translateY(1px); width: 12.5px; flex-grow: 0; margin-right: 14px; margin-left: 2px;"></div> <div style="background-color: #F4F4F4; border-radius: 50%; height: 12.5px; width: 12.5px; transform: translateX(9px) translateY(-18px);"></div></div><div style="margin-left: 8px;"> <div style=" background-color: #F4F4F4; border-radius: 50%; flex-grow: 0; height: 20px; width: 20px;"></div> <div style=" width: 0; height: 0; border-top: 2px solid transparent; border-left: 6px solid #f4f4f4; border-bottom: 2px solid transparent; transform: translateX(16px) translateY(-4px) rotate(30deg)"></div></div><div style="margin-left: auto;"> <div style=" width: 0px; border-top: 8px solid #F4F4F4; border-right: 8px solid transparent; transform: translateY(16px);"></div> <div style=" background-color: #F4F4F4; flex-grow: 0; height: 12px; width: 16px; transform: translateY(-4px);"></div> <div style=" width: 0; height: 0; border-top: 8px solid #F4F4F4; border-left: 8px solid transparent; transform: translateY(-4px) translateX(8px);"></div></div></div> <div style="display: flex; flex-direction: column; flex-grow: 1; justify-content: center; margin-bottom: 24px;"> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; margin-bottom: 6px; width: 224px;"></div> <div style=" background-color: #F4F4F4; border-radius: 4px; flex-grow: 0; height: 14px; width: 144px;"></div></div></a><p style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;"><a href="https://www.instagram.com/p/CLR0bzuBLJG/?utm_source=ig_embed&amp;utm_campaign=loading" style=" color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none;" target="_blank">Una publicación compartida de LOCATION 🌵 (@karolg)</a></p></div></blockquote> <script async src="//www.instagram.com/embed.js"></script></div>
+        <br>
+        <p>KAROL G sigue cosechando éxitos, sus últimos estrenos han sido tendencia a nivel mundial, el ultimo fue <a href="https://explosivog.com/2021/karol-g-sorprende-a-sus-fanaticos-con-location-junto-a-anuel-y-j-balvin">LOCATION 
+            junto a su actual pareja ANUEL AA y su parcero J BALVIN</a>  donde ya alcanzan alrededor de 40 millones de 
+            reproducciones en YouTube a solo 1 semana de su lanzamiento. La artista colombiana fue galardonada en PREMIOS 
+            LO NUESTRO con LA CANCIÓN DEL AÑO (tusa junto a NICKY MINAJ) y ARTISTA FEMENINA DEL AÑO.</p>
+        <br>
+        <div class="sharethis-inline-share-buttons" style="z-index: 0"></div>
+        <br>
+        <br>
+    </div>
+    <div class="top-stories">
+        <h2>LO MÁS VISTO</h2>
+        <br>
+        <form id="img-lomasvisto" v-cloak>
+            <ul>
+                <li v-for="article in filteredArticles">
+                    <a v-bind:href="article.url"><img class="img-lomasvisto" v-bind:src="article.image"/>
+                        <h4>{{article.title}}</h4>
+                    </a>
+                 </li> 
+            </ul>
+        </form>
+        <br>
+        <h2>ULTIMAS HISTORIAS</h2>
+        <br>
+        <form id="ultimas-historias" v-cloak>
+            <ul>
+                <li v-for="article in filteredArticles">
+                    <a href="#" v-bind:href="article.url">
+                        <h4>{{article.title}}</h4>
+                    </a>
+                </li> 
+            </ul>
+        </form>
+    </div>
+    <br><br>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="newsletter_container">
+                <div class="newsletter_title"><h2>Suscribete y mantente al tanto de todo lo nuevo.</h2></div>
+                <form action="#" id="newsletter_form" class="newsletter_form">
+                    <input type="email" class="newsletter_input" placeholder="Número de WhatsApp O Correo Electrónico" required="required">
+                    <button class="newsletter_button">ENVIAR</button>
+                </form>
+            </div>
+                <!-- NUESTROS LINKS -->
+                <div class="footer_list">
+                    <div class="footer_list_title">NUESTROS <br>LINKS</div>
+                    <form id="nuestros-links" v-cloak>
+                        <ul>
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                           </li> 
+                       </ul>
+                   </form>
+                </div>
+                <!-- CANALES -->
+                <div class="footer_list">
+                    <div class="footer_list_title">CANALES</div>
+                    <form id="nuestros-canales" v-cloak>
+                        <ul>
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                           </li> 
+                       </ul>
+                   </form>
+                </div>
+                <!-- CONNECTIVIDAD -->
+                <div class="footer_list">
+                    <div class="footer_list_title">CONTACTO</div>
+                     <form id="contacto" v-cloak>
+                        <ul>
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                           </li> 
+                       </ul>
+                   </form>
+                </div>
+            
+        </div>
+        <div class="copyright_bar">
+            <span>
+               &copy;2020 Explosivo G Entertainment | Todos los Derechos Reservados.
+            </span>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+    <script src="js/menu-scroll.js"></script>
+    <script src="js/MENU-URLS.js"></script>
+</body>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f35ca466d4a930012f564c8&product=inline-share-buttons' async='async'></script>
+</html>

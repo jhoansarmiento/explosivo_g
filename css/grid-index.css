@@ -1,0 +1,30 @@
+/*CONTENEDOR PRINCIPAL NEW, LO MAS VISTO Y ULTIMAS HISTORIAS*/
+.container{
+    display:grid;
+    grid-template-columns:65% 1fr;
+    margin-top: 100px !important;
+    gap: 10px;
+}
+.container img{
+    inline-size: 100%;
+}
+.principal-new{
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+
+/*CONTENEDOR DE LAS CANCIONES Y LOS SHOWS*/
+.estrenos-shows{
+    width: 95%;
+    margin: auto;
+    display:grid;
+    grid-template-columns:65% 1fr;
+    gap: 10px;
+}
+
+
+
+
+
+

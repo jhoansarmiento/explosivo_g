@@ -1,0 +1,45 @@
+@media only screen and (max-width: 900px){
+    .container{
+        width: 90%;
+    }
+    .parrafos, .top-stories{
+        width: 80%;
+    }
+    .video{
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .container, .parrafos, .top-stories{
+        width: 95%;
+    }
+    h1{
+        font-size: 1.6em;
+        padding: 0;
+    }
+    .video{
+        width: 100%;
+    }
+    .top-stories img{
+        inline-size: 80%;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .video{
+        height: 250px;
+    }
+    h4{
+        font-size: 1em;
+    }
+    p{
+        font-size: 1.2em;
+    }
+}
+
+@media only screen and (max-width:320px){
+    h1{
+        font-size: 1.3em;
+    }
+}

@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000000;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+h1, h2{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+h4{
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+	font-size: 1.2em;
+}
+h4:hover{
+	cursor: pointer;
+	color: #e51285;
+}
+h4{
+	transition: color 0.2s linear 0.1s;
+    margin-bottom: 5px;
+}
+h5{
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+p{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.3em;
+}
+.title{
+    width: 90%;
+    margin: auto;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+
+/*noticias estrenos principal*/
+.noticia-principal img{
+    width: 100%;
+    height: auto;
+}
+
+.noticia-principal{
+    background-color: #212121;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px 10px 40px;
+    padding: 10px;
+    transition: background-color .20s ease-in-out;
+}
+
+.noticia-principal:hover{
+    background-color:#e51285 ;
+}
+
+
+/*CONTENEDOR NOTICIAS*/
+.noticias{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    gap: 10px;
+    margin: auto;
+}
+
+/*ESTILO NOTICIAS*/
+.noticia img{
+    width: 100%;
+    height: auto;
+}
+
+.noticia{
+    background-color: #212121;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px 10px;
+    padding: 10px;
+    transition: background-color .20s ease-in-out;
+}
+
+.noticia:hover{
+    background-color:#e51285 ;
+}
+
+.contenido h1 {
+    font-size: 1.7em;
+}
+
+.contenido h2 {
+    font-size: 1.3em;
+}
+
+/*ESTILO TOP 3*/
+.top-3{
+	width: 90%;
+	margin: auto;
+}
+
+.estrenos{
+    width:95%;
+    margin: auto;
+}
+
+/*ESTILOS DE LOS SHOWS*/
+.shows{
+	overflow: hidden;
+}
+.shows img{
+	inline-size: 90%;
+}
+a.iluminacion :hover{
+	filter: saturate(140%); 
+}
+

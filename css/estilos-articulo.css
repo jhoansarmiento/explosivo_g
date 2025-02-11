@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #000000;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+h1, h2{
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    padding: 10px 0;
+    font-size: 2.3em;
+}
+h4{
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    transition: color 0.2s linear 0.1s;
+}
+h4:hover{
+    cursor: pointer;
+    color: #e51285;
+}
+h4{
+    font-family: 'Alegreya Sans', sans-serif;
+	font-size: 1.2em;
+    color: white;
+    margin-bottom: 8px;
+}
+h5{
+    font-family: 'Karla', sans-serif;
+    font-size: 1em;
+}
+.contenido h1 {
+    font-size: 1.2em;
+}
+p{
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 1.3em;
+}
+p.estilo-1::first-letter{
+	font-size:3em;
+	font-family:serif;
+}
+a{
+    text-decoration: none;
+    color: #e51285;
+}
+h5 a{
+    color: #e51285;
+}
+.fecha{
+    float: right;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px !important;
+}
+.imagen-noticia{
+    width: 100%;
+}
+.parrafos{
+    width: 70%;
+    margin: auto;
+}
+
+.video{
+    margin: auto;
+    align-items: center;
+    display: flex;
+}
+
+.top-stories{
+    width: 70%;
+    margin: auto;
+}
+
+.top-stories img{
+    inline-size: 50%;
+}

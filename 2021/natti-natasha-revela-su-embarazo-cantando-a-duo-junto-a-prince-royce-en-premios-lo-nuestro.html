@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../css/estilos-articulo.css">
+    <!--RESPONSIVE-->
+    <link rel="stylesheet" href="../css/responsive-articulo.css">
+    <!-- MENU CSS-->
+    <link rel="stylesheet" href="../css/menu.css">
+    <!-- FOOTER CSS-->
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <!-- FONT MONTSERRAT-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">   
+    <!--FONT KARLA-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+    <!--FONT ALEGREYA-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet"> 
+
+    <!--Plugins Redes-->
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.1.0/css/all.css'>
+
+    <!--FAVICON-->
+    <link  rel="icon"   href="../recursos/favicon-32x32.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../recursos/favicon/apple-touch-icon.png">
+
+    <!--ETIQUETAS META-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="description" content="Con mucha alegría pudimos ver a la cantante dominicana en la celebración 
+    de la 33°a edición de PREMIOS LO NUESTRO, cantando a dúo junto a PRINCE ROYCE su última colaboración 
+    “ANTES QUE SALGA EL SOL”. Luciendo un vestido blanco en el que resaltaba la belleza de la cantante y 
+    en el que notablemente pudimos observar su avanzado estado de gestación (5 meses)." />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="content-language" content="es" />
+	<meta name="keywords" content=""/><!--AÑADE PALABRAS CLAVES-->
+	<meta name ="author" content ="Explosivo G, Entertainment"/>
+    <meta name="theme-color" content="#000000"/>
+    
+    <!-- OpenGraph -->
+	<meta property="og:url" content="https://explosivog.com/2021/"/>
+	<meta property="og:title" content="NATTI NATASHA Revela Su Embarazo Cantanto A Dúo Junto A PRINCE ROYCE En PREMIOS LO NUESTRO | Explosivo G"/>
+	<meta property="og:image" content="../images/natti.jpg"/>
+	<meta property="og:type" content="website"/>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125010864-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-125010864-1');
+    </script>
+    
+    <title>NATTI NATASHA Revela Su Embarazo Cantanto A Dúo Junto A PRINCE ROYCE En PREMIOS LO NUESTRO | Explosivo G</title>
+</head>
+<body>
+    	<!-- caja contenedor de logo, menu, redes -->
+        <header class="header">
+            <div class="header_content d-flex align-items-center justify-content-center">
+                <!--Logo-->
+                <div class="logo"><a href="https://explosivog.com"><img src="../recursos/logo.png"></a></div>
+                <!--Menu ordenador-->
+                <form id="Menu-ordenador" v-cloak>
+                    <nav class="menu_ordenador">
+                        <ul class="d-flex d-flex align-items-center justify-content-center justify-content">
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                            </li> 
+                        </ul>
+                    </nav>      
+                </form>
+                <!-- Hamburguesa -->
+                <div class="hamburger ml-auto">
+                   MENÚ 
+                    <div class="d-flex flex-column align-items-end justify-content-between">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <!--redes-->
+                <div class="redes-escritorio">	
+                    <section>
+                        <div class="social"> 
+                            <div class="margen-responsive-redes-4x4">   
+                                <a href="https://www.instagram.com/explosivog/?hl=es-la" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a> 
+                                <a href="https://www.facebook.com/explosivog/" target="_blank">
+                                   <i class="fab fa-facebook-f"></i></i>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCcKdOMQykOmAls4bJX2moOg" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://open.spotify.com/user/apwdmpx6lr962qnukmk3chluc" target="_blank">
+                                   <i class="fab fa-spotify"></i></i>
+                                </a>
+                            </div>
+                        </div>
+                    </section>	
+                </div>
+            </div>
+        </header>
+        <!--Menu Responsive-->
+        <div class="menu">
+            <div>
+                <div class="menu_overlay"></div>
+                <div class="menu_container">
+                    <nav class="caja-redes-responsive">
+                       <!--redes-->
+                        <div class="redes-responsive">	
+                            <section>
+                                <div class="social"> 
+                                    <a href="https://www.instagram.com/explosivog/?hl=es-la" target="_blank">
+                                      <i class="fab fa-instagram"></i>
+                                    </a> 
+                                    <a href="https://www.facebook.com/explosivog/" target="_blank">
+                                       <i class="fab fa-facebook-f"></i></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCcKdOMQykOmAls4bJX2moOg" target="_blank">
+                                      <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://open.spotify.com/user/apwdmpx6lr962qnukmk3chluc" target="_blank">
+                                      <i class="fab fa-spotify"></i></i>
+                                    </a>
+                                </div>
+                            </section>	
+                        </div>
+                    </nav>
+                    <nav class="menu_responsive">
+                        <ul class="flex-column">
+                            <form id="Menu-responsive" v-cloak>            
+                                <li v-for="article in filteredArticles">
+                                    <a href="#" v-bind:href="article.url">
+                                       <p>{{article.title}}</p>
+                                    </a>
+                                </li>       
+                            </form>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    <br>
+    <div class="container">
+        <h1>NATTI NATASHA Revela Su Embarazo Cantando A Dúo Junto a PRINCE ROYCE En PREMIOS LO NUESTRO</h1>
+        <br><hr>
+        <h5>por <a href="">JHOAN SARMIENTO</a></h5>
+        <h5 class="fecha">Feb 19, 2021</h5>
+        <img class="imagen-noticia" src="../images/natti.jpg" alt="" style="padding: 10PX 0;">
+    </div>
+    <div class="parrafos">
+        <p class="estilo-1">Con mucha alegría pudimos ver a la cantante dominicana en la celebración de la 33°a 
+            edición de PREMIOS LO NUESTRO, cantando a dúo junto a PRINCE ROYCE su última colaboración “ANTES QUE SALGA 
+            EL SOL”. Luciendo un vestido blanco en el que resaltaba la belleza de la cantante y en el que notablemente
+            pudimos observar su avanzado estado de gestación (5 meses).</p>
+        <br>
+        <iframe class="video" width="65%" height="315" src="https://www.youtube.com/embed/5sLOcaTzfDw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <p>Natti revelo en una reciente entrevista con la revista PEOPLE EN ESPAÑOL que en el año 2007 fue sometida a una 
+            cirugía en la que le extirparon una trompa de Falopio tras sufrir de quistes en la matriz ese año. La cantante 
+            se sintió frustrada cuando el doctor le informo que no podía quedar en embarazo de forma natural y lo que podía 
+            hacer era un tratamiento de inseminación in vitro (fuera del cuerpo).</p>
+        <br>
+        <div align="center"><img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=%5B1238%2C574%5D&w=800&h=533&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F21%2F2021%2F02%2F19%2FNatti-Natasha-promo-home-page.jpg" alt=""></div>
+        <br>
+        <p>
+            Tiempo después de empezar con el tratamiento el doctor le dijo que en definitiva no podía tener hijos, lo que 
+            causo una fuerte depresión en la artista ya que de niña una de sus metas era ser madre. Cuenta Natti que un día 
+            se encontraba en puerto rico con su actual pareja Raphy Pina que a la vez es su mánager montando jetski y que de 
+            un momento a otro sintió un leve dolor en la espalda por lo que acudió horas mas tarde al médico, al día siguiente 
+            a RAPHY le entra una llamada con la buena noticia de que NATTI estaba embarazada.
+        </p>
+        <br>
+        <p>Para celebrar esta buena nueva en el cumpleaños de NATTI llevado a cabo en el mes de diciembre, RAPHY le 
+            entrega un anillo de compromiso para sellar su amor de la mejor manera y esperar ansiosos, pero con mucha 
+            felicidad la llegada de su bebé. </p>
+        <br>
+        <div class="sharethis-inline-share-buttons" style="z-index: 0"></div>
+        <br>
+        <br>
+    </div>
+    <div class="top-stories">
+        <h2>LO MÁS VISTO</h2>
+        <br>
+        <form id="img-lomasvisto" v-cloak>
+            <ul>
+                <li v-for="article in filteredArticles">
+                    <a v-bind:href="article.url"><img class="img-lomasvisto" v-bind:src="article.image"/>
+                        <h4>{{article.title}}</h4>
+                    </a>
+                 </li> 
+            </ul>
+        </form>
+        <br>
+        <h2>ULTIMAS HISTORIAS</h2>
+        <br>
+        <form id="ultimas-historias" v-cloak>
+            <ul>
+                <li v-for="article in filteredArticles">
+                    <a href="#" v-bind:href="article.url">
+                        <h4>{{article.title}}</h4>
+                    </a>
+                </li> 
+            </ul>
+        </form>
+    </div>
+    <br><br>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="newsletter_container">
+                <div class="newsletter_title"><h2>Suscribete y mantente al tanto de todo lo nuevo.</h2></div>
+                <form action="#" id="newsletter_form" class="newsletter_form">
+                    <input type="email" class="newsletter_input" placeholder="Número de WhatsApp O Correo Electrónico" required="required">
+                    <button class="newsletter_button">ENVIAR</button>
+                </form>
+            </div>
+                <!-- NUESTROS LINKS -->
+                <div class="footer_list">
+                    <div class="footer_list_title">NUESTROS <br>LINKS</div>
+                    <form id="nuestros-links" v-cloak>
+                        <ul>
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                           </li> 
+                       </ul>
+                   </form>
+                </div>
+                <!-- CANALES -->
+                <div class="footer_list">
+                    <div class="footer_list_title">CANALES</div>
+                    <form id="nuestros-canales" v-cloak>
+                        <ul>
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                           </li> 
+                       </ul>
+                   </form>
+                </div>
+                <!-- CONNECTIVIDAD -->
+                <div class="footer_list">
+                    <div class="footer_list_title">CONTACTO</div>
+                     <form id="contacto" v-cloak>
+                        <ul>
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                           </li> 
+                       </ul>
+                   </form>
+                </div>
+            
+        </div>
+        <div class="copyright_bar">
+            <span>
+               &copy;2020 Explosivo G Entertainment | Todos los Derechos Reservados.
+            </span>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+    <script src="js/menu-scroll.js"></script>
+    <script src="js/MENU-URLS.js"></script>
+</body>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f35ca466d4a930012f564c8&product=inline-share-buttons' async='async'></script>
+</html>

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="../css/estilos-articulo.css">
+    <!--RESPONSIVE-->
+    <link rel="stylesheet" href="../css/responsive-articulo.css">
+    <!-- MENU CSS-->
+    <link rel="stylesheet" href="../css/menu.css">
+    <!-- FOOTER CSS-->
+    <link rel="stylesheet" href="../css/footer.css">
+
+    <!-- FONT MONTSERRAT-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">   
+    <!--FONT KARLA-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+    <!--FONT ALEGREYA-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet"> 
+
+    <!--Plugins Redes-->
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.1.0/css/all.css'>
+
+    <!--FAVICON-->
+    <link  rel="icon"   href="../recursos/favicon-32x32.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../recursos/favicon/apple-touch-icon.png">
+
+    <!--ETIQUETAS META-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="description" content="HEAR THIS MUSIC lanzó su nuevo sencillo titulado “ALOHA”, un junte inesperado pero que a la vez sorprendió a sus fanáticos y de muy buena manera. DJ LUIAN Y LOS MAMBO KINGS juntaron a los colombianos MALUMA y a su nueva promesa musical BEÉLE, artista barranquillero que poco a poco a demostrado con buena música el por qué fue firmado con este importante sello discográfico, y a los dos puertorriqueños RAW ALEJANDRO y DARELL que están teniendo un buen crecimiento en sus carreras musicales. "/>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="content-language" content="es" />
+	<meta name="keywords" content="aloha beele, aloha maluma, aloha rauw, aloha darell, aloha hear this music"/><!--AÑADE PALABRAS CLAVES-->
+	<meta name ="author" content ="Explosivo G, Entertainment"/>
+    <meta name="theme-color" content="#000000"/>
+    
+    <!-- OpenGraph -->
+	<meta property="og:url" content="https://explosivog.com/2021/hear-this-music-presenta-aloha-un-junte-inesperado-y-muy-explosivo"/>
+	<meta property="og:title" content="HEAR THIS MUSIC PRESENTA: “ALOHA” Un Junte Inesperado Y Muy ¡Explosivo!  | Explosivo G"/>
+	<meta property="og:image" content="../images/aloha.jpg"/>
+	<meta property="og:type" content="website"/>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125010864-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-125010864-1');
+    </script>
+    
+    <title>HEAR THIS MUSIC PRESENTA: “ALOHA” Un Junte Inesperado Y Muy ¡Explosivo!  | Explosivo G</title>
+</head>
+<body>
+    	<!-- caja contenedor de logo, menu, redes -->
+        <header class="header">
+            <div class="header_content d-flex align-items-center justify-content-center">
+                <!--Logo-->
+                <div class="logo"><a href="https://explosivog.com"><img src="../recursos/logo.png"></a></div>
+                <!--Menu ordenador-->
+                <form id="Menu-ordenador" v-cloak>
+                    <nav class="menu_ordenador">
+                        <ul class="d-flex d-flex align-items-center justify-content-center justify-content">
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                            </li> 
+                        </ul>
+                    </nav>      
+                </form>
+                <!-- Hamburguesa -->
+                <div class="hamburger ml-auto">
+                   MENÚ 
+                    <div class="d-flex flex-column align-items-end justify-content-between">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <!--redes-->
+                <div class="redes-escritorio">	
+                    <section>
+                        <div class="social"> 
+                            <div class="margen-responsive-redes-4x4">   
+                                <a href="https://www.instagram.com/explosivog/?hl=es-la" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a> 
+                                <a href="https://www.facebook.com/explosivog/" target="_blank">
+                                   <i class="fab fa-facebook-f"></i></i>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCcKdOMQykOmAls4bJX2moOg" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://open.spotify.com/user/apwdmpx6lr962qnukmk3chluc" target="_blank">
+                                   <i class="fab fa-spotify"></i></i>
+                                </a>
+                            </div>
+                        </div>
+                    </section>	
+                </div>
+            </div>
+        </header>
+        <!--Menu Responsive-->
+        <div class="menu">
+            <div>
+                <div class="menu_overlay"></div>
+                <div class="menu_container">
+                    <nav class="caja-redes-responsive">
+                       <!--redes-->
+                        <div class="redes-responsive">	
+                            <section>
+                                <div class="social"> 
+                                    <a href="https://www.instagram.com/explosivog/?hl=es-la" target="_blank">
+                                      <i class="fab fa-instagram"></i>
+                                    </a> 
+                                    <a href="https://www.facebook.com/explosivog/" target="_blank">
+                                       <i class="fab fa-facebook-f"></i></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCcKdOMQykOmAls4bJX2moOg" target="_blank">
+                                      <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://open.spotify.com/user/apwdmpx6lr962qnukmk3chluc" target="_blank">
+                                      <i class="fab fa-spotify"></i></i>
+                                    </a>
+                                </div>
+                            </section>	
+                        </div>
+                    </nav>
+                    <nav class="menu_responsive">
+                        <ul class="flex-column">
+                            <form id="Menu-responsive" v-cloak>            
+                                <li v-for="article in filteredArticles">
+                                    <a href="#" v-bind:href="article.url">
+                                       <p>{{article.title}}</p>
+                                    </a>
+                                </li>       
+                            </form>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    <br>
+    <div class="container">
+        <h1>HEAR THIS MUSIC PRESENTA: “ALOHA” Un Junte Inesperado Y Muy ¡Explosivo!</h1>
+        <br><hr>
+        <h5>por <a href="https://www.instagram.com/sarmientooficial/">JHOAN SARMIENTO</a></h5>
+        <h5 class="fecha">Mar 5, 2021</h5>
+        <img class="imagen-noticia" src="../images/aloha.jpg" alt="" style="padding: 10PX 0;">
+    </div>
+    <div class="parrafos">
+        <p class="estilo-1">HEAR THIS MUSIC lanzó su nuevo sencillo titulado “ALOHA”, un junte inesperado pero que a la 
+            vez sorprendió a sus fanáticos y de muy buena manera. DJ LUIAN Y LOS MAMBO KINGS juntaron a los colombianos 
+            MALUMA y a su nueva promesa musical BEÉLE, artista barranquillero que poco a poco a demostrado con buena 
+            música el por qué fue firmado con este importante sello discográfico, y a los dos puertorriqueños 
+            RAW ALEJANDRO y DARELL que están teniendo un buen crecimiento en sus carreras. </p>
+        <br>
+        <p>Con un sonido muy tropical, haciéndole referencia a su titulo “ALOHA” que es una palabra hawaiana o tal vez 
+            la palabra mas hawaiana y representativa de esta isla usada por los nativos y que tiene varios significados 
+            como: hola, adiós, amor y afecto. Al escuchar esta canción fácilmente puede alegrarte instantáneamente y 
+            trasportarte a un ambiente playero, con su ritmo y todos los sonidos de la producción creada por LOS MAMBO 
+            KINGS Y DJ LUIAN.</p>
+        <br>
+        <p>HEAR THIS MUSIC siempre se ha caracterizado desde sus inicios por hacer juntes estratégicos de los que nadie 
+            se imagina y la mayoría han sido todo un éxito, prueba de esto son juntes como “LA OCASIÓN” que fue la 
+            canción que marco una tendencia en el genero urbano, que contó con artistas como OZUNA, ANUEL AA, DE LA 
+            GHETTO, Y ARCANGEL. Otro junte muy explosivo fue el de “SENSUALIDAD” que tuvo la participación de PRINCE 
+            ROYCE, BAD BUNNY Y J BALVIN, como también lo fue el junte entre EL CONEJO MALO y ARCANGEL en “TU NO VIVE 
+            ASI”. Tan solo estas tres canciones sumando sus reproducciones en YOUTUBE suman mas de 2.567 millones de 
+            views, números que muestran la calidad y el buen oído que tienen DJ LUIAN Y LOS MAMBO KINGS a la hora de 
+            hacer un junte.
+        </p>
+        <br>
+        <iframe class="video" width="65%" height="315" src="https://www.youtube.com/embed/OZeL8kCqHcY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br>
+        <div class="sharethis-inline-share-buttons" style="z-index: 0"></div>
+        <br>
+        <br>
+    </div>
+    <div class="top-stories">
+        <h2>LO MÁS VISTO</h2>
+        <br>
+        <form id="img-lomasvisto" v-cloak>
+            <ul>
+                <li v-for="article in filteredArticles">
+                    <a v-bind:href="article.url"><img class="img-lomasvisto" v-bind:src="article.image"/>
+                        <h4>{{article.title}}</h4>
+                    </a>
+                 </li> 
+            </ul>
+        </form>
+        <br>
+        <h2>ULTIMAS HISTORIAS</h2>
+        <br>
+        <form id="ultimas-historias" v-cloak>
+            <ul>
+                <li v-for="article in filteredArticles">
+                    <a href="#" v-bind:href="article.url">
+                        <h4>{{article.title}}</h4>
+                    </a>
+                </li> 
+            </ul>
+        </form>
+    </div>
+    <br><br>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="newsletter_container">
+                <div class="newsletter_title"><h2>Suscribete y mantente al tanto de todo lo nuevo.</h2></div>
+                <form action="../bd/registro-de-correo" id="newsletter_form" class="newsletter_form">
+                    <input type="email" class="newsletter_input" placeholder="Número de WhatsApp O Correo Electrónico" required="required">
+                    <button class="newsletter_button">ENVIAR</button>
+                </form>
+            </div>
+                <!-- NUESTROS LINKS -->
+                <div class="footer_list">
+                    <div class="footer_list_title">NUESTROS <br>LINKS</div>
+                    <form id="nuestros-links" v-cloak>
+                        <ul>
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                           </li> 
+                       </ul>
+                   </form>
+                </div>
+                <!-- CANALES -->
+                <div class="footer_list">
+                    <div class="footer_list_title">CANALES</div>
+                    <form id="nuestros-canales" v-cloak>
+                        <ul>
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                           </li> 
+                       </ul>
+                   </form>
+                </div>
+                <!-- CONNECTIVIDAD -->
+                <div class="footer_list">
+                    <div class="footer_list_title">CONTACTO</div>
+                     <form id="contacto" v-cloak>
+                        <ul>
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                           </li> 
+                       </ul>
+                   </form>
+                </div>
+            
+        </div>
+        <div class="copyright_bar">
+            <span>
+               &copy;2020 Explosivo G Entertainment | Todos los Derechos Reservados.
+            </span>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+    <script src="js/menu-scroll.js"></script>
+    <script src="js/MENU-URLS.js"></script>
+</body>
+<script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f35ca466d4a930012f564c8&product=inline-share-buttons' async='async'></script>
+</html>
