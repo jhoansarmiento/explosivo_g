@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/estilos-noticias.css">
+    <!-- MENU CSS-->
+    <link rel="stylesheet" href="css/menu.css">
+    <!--RESPONSIVE CSS-->
+    <link rel="stylesheet" href="css/responsive-noticias.css">
+    <!-- MENU CSS-->
+    <link rel="stylesheet" href="css/menu.css">
+    <!-- FOOTER CSS-->
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- FONT MONTSERRAT-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">   
+    <!--FONT KARLA-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap" rel="stylesheet">
+    <!--FONT Libre Baskerville parrafos-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <!--FONT ALEGREYA-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&display=swap" rel="stylesheet">
+
+    <!--Plugins Redes-->
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.1.0/css/all.css'>
+
+    <!--FAVICON-->
+    <link  rel="icon"   href="recursos/favicon-32x32.png" type="image/png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="recursos/favicon/apple-touch-icon.png">
+
+    <!--ETIQUETAS META-->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="description" content="
+	Encuentra las últimas noticias del entretenimiento urbano, lo mejor en música, entrevistas y más." />
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta http-equiv="content-language" content="es" />
+	<meta name="keywords" content="noticias explosivo g, noticias explosivog, noticias explosivo, noticias ExplosivoG, "/><!--AÑADE PALABRAS CLAVES-->
+	<meta name ="author" content ="Explosivo G, Entertainment"/>
+    <meta name="theme-color" content="#000000"/>
+    
+    <!-- OpenGraph -->
+	<meta property="og:url" content="https://explosivog.com/noticias"/>
+	<meta property="og:title" content="Encuentra las últimas noticias del entretenimiento urbano, entrevistas y más. | Explosivo G"/>
+	<meta property="og:image" content="recursos/logo.png"/>
+	<meta property="og:type" content="website"/>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125010864-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-125010864-1');
+    </script>
+    <script data-ad-client="ca-pub-8267898525929414" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+    <title>Noticias | Explosivo G</title>
+</head>
+<body>
+    	<!-- caja contenedor de logo, menu, redes -->
+        <header class="header">
+            <div class="header_content d-flex align-items-center justify-content-center">
+                <!--Logo-->
+                <div class="logo"><a href="https://explosivog.com"><img src="recursos/logo.png"></a></div>
+                <!--Menu ordenador-->
+                <form id="Menu-ordenador" v-cloak>
+                    <nav class="menu_ordenador">
+                        <ul class="d-flex d-flex align-items-center justify-content-center justify-content">
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                            </li> 
+                        </ul>
+                    </nav>      
+                </form>
+                <!-- Hamburguesa -->
+                <div class="hamburger ml-auto">
+                   MENÚ 
+                    <div class="d-flex flex-column align-items-end justify-content-between">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                <!--redes-->
+                <div class="redes-escritorio">	
+                    <section>
+                        <div class="social"> 
+                            <div class="margen-responsive-redes-4x4">   
+                                <a href="https://www.instagram.com/explosivog/?hl=es-la" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                </a> 
+                                <a href="https://www.facebook.com/explosivog/" target="_blank">
+                                   <i class="fab fa-facebook-f"></i></i>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCcKdOMQykOmAls4bJX2moOg" target="_blank">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://open.spotify.com/user/apwdmpx6lr962qnukmk3chluc" target="_blank">
+                                   <i class="fab fa-spotify"></i></i>
+                                </a>
+                            </div>
+                        </div>
+                    </section>	
+                </div>
+            </div>
+        </header>
+        <!--Menu Responsive-->
+        <div class="menu">
+            <div>
+                <div class="menu_overlay"></div>
+                <div class="menu_container">
+                    <nav class="caja-redes-responsive">
+                       <!--redes-->
+                        <div class="redes-responsive">	
+                            <section>
+                                <div class="social"> 
+                                    <a href="https://www.instagram.com/explosivog/?hl=es-la" target="_blank">
+                                      <i class="fab fa-instagram"></i>
+                                    </a> 
+                                    <a href="https://www.facebook.com/explosivog/" target="_blank">
+                                       <i class="fab fa-facebook-f"></i></i>
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCcKdOMQykOmAls4bJX2moOg" target="_blank">
+                                      <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://open.spotify.com/user/apwdmpx6lr962qnukmk3chluc" target="_blank">
+                                      <i class="fab fa-spotify"></i></i>
+                                    </a>
+                                </div>
+                            </section>	
+                        </div>
+                    </nav>
+                    <nav class="menu_responsive">
+                        <ul class="flex-column">
+                            <form id="Menu-responsive" v-cloak>            
+                                <li v-for="article in filteredArticles">
+                                    <a href="#" v-bind:href="article.url">
+                                       <p>{{article.title}}</p>
+                                    </a>
+                                </li>       
+                            </form>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    <br>
+    <div class="container">
+
+        <div class="principal-new">
+            <br>
+            <a href="2021/daddy-yankee-esta-puesto-pal-problema-en-su-nueva-cancion">
+            <h1>DADDY YANKEE Está Puesto Pal “PROBLEMA” En Su Nueva Canción</h1>
+            <br>
+            <img src="images/problema.jpg" alt=""></a>
+        </div>
+        <div class="top-stories">
+            <h2>LO MÁS VISTO</h2>
+            <br>
+            <form id="img-lomasvisto" v-cloak>
+                <ul>
+                    <li v-for="article in filteredArticles">
+                        <a v-bind:href="article.url"><img class="img-lomasvisto" v-bind:src="article.image"/>
+                            <h4>{{article.title}}</h4>
+                        </a>
+                     </li> 
+                </ul>
+            </form>
+            <br>
+            <h2>ULTIMAS HISTORIAS</h2>
+            <br>
+            <form id="ultimas-historias" v-cloak>
+                <ul>
+                    <li v-for="article in filteredArticles">
+                        <a href="#" v-bind:href="article.url">
+                            <h4>{{article.title}}</h4>
+                        </a>
+                    </li> 
+                </ul>
+            </form>
+        </div>
+    </div>
+    <br>
+    <h1 class="title">NOTICIAS</h1>
+    <br>
+    <div class="noticias">
+        <a href="2021/colombia-y-puerto-rico-se-unen-en-lejania-remix">
+            <div class="noticia"><img src="images/lejania-remix.jpg" alt="">
+                <div class="contenido">
+                    <div class="titulo"><h1>Colombia Y Puerto Rico Se Unen En “LEJANÍA REMIX”</h1></div>
+                    <div class="escritor"><h5>por JHOAN SARMIENTO</h5></div>
+                    <br>
+                    <div class="descripcion"><p>La versión original de “LEJANÍA” de RYAN CASTRO junto a BLESSED fue todo un éxito a nivel 
+                        nacional, prueba de esto son los muy buenos números que ha alcanzado esta canción en plataformas como 
+                        YOUTUBE, llegando a más de 12 millones de reproducciones lo que los ha posicionado en la casilla número 
+                        16 en el top 100 de canciones en Colombia, algo muy importante para estos dos talentos jóvenes que vienen 
+                        luchando desde el barrio por sus sueños. </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="2021/karol-g-se-compra-un-ferrari-me-aburri-de-la-jeepeta-y-me-compre-un-makinon">
+            <div class="noticia"><img src="images/karolg-ferrari.jpg" alt="">
+                <div class="contenido">
+                    <div class="titulo"><h1>KAROL G se compra un Ferrari: “me aburrí de la jeepeta y me compré un MAKINON”</h1></div>
+                    <div class="escritor"><h5>por JHOAN SARMIENTO</h5></div>
+                    <br>
+                    <div class="descripcion"><p>Así lo dejo saber la artista colombiana en sus redes sociales luciendo su nueva adquisición, 
+                        nada mas y nada menos que un FERRARI Spider 812 GTS del 2021, en estados unidos solo hay 2 unidades en las 
+                        calles lo que lo hace un coche más exclusivo.</p> 
+                        <p> <i>ya son 14 años soñando y trabajando y ... pues si ... Vale la pena</i>, escribió en su cuenta de INSTAGRAM. </p>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <a href="2021/natti-natasha-revela-su-embarazo-cantando-a-duo-junto-a-prince-royce-en-premios-lo-nuestro">
+            <div class="noticia"><img src="images/natti.jpg" alt="">
+                <div class="contenido">
+                    <div class="titulo"><h1>NATTI NATASHA Revela Su Embarazo Cantando A Dúo Junto a PRINCE ROYCE En PREMIOS LO NUESTRO</h1></div>
+                    <div class="escritor"><h5>por JHOAN SARMIENTO</h5></div>
+                    <br>
+                    <div class="descripcion"><p>Con mucha alegría pudimos ver a la cantante dominicana en la celebración de la 33°a 
+                        edición de PREMIOS LO NUESTRO, cantando a dúo junto a PRINCE ROYCE su última colaboración “ANTES QUE SALGA 
+                        EL SOL”. Luciendo un vestido blanco en el que resaltaba la belleza de la cantante y en el que notablemente
+                        pudimos observar su avanzado estado de gestación.</p></div>
+                </div>
+            </div>
+        </a>
+        <a href="2021/bad-bunny-el-mas-galardonado-en-premios-lo-nuestro">
+            <div class="noticia"><img src="images/bad-bunny-premios.jpg" alt="">
+                <div class="contenido">
+                    <div class="titulo"><h1>BAD BUNNY, EL MAS GALARDONADO EN PREMIOS LO NUESTRO</h1></div>
+                    <div class="escritor"><h5>por JHOAN SARMIENTO</h5></div>
+                    <br>
+                    <div class="descripcion"><p>En la noche de ayer la ciudad de MIAMI fue testigo de la celebración de los 
+                        PREMIOS LO NUESTRO que tuvo como gran ganador a BAD BUNNY, logrando llevarse todos los galardones 
+                        de las 7 nominaciones a las que fue nominado, aunque el conejo malo brillo por su ausencia en la 
+                        alfombra magenta de Univisión su música sin duda lo represento de la mejor manera ganando en las 
+                        siguientes categorías:</p></div>
+                </div>
+            </div>
+        </a>
+        <a href="2021/ryan-castro-anuncia-el-remix-de-lejania-sin-blessed">
+            <div class="noticia"><img src="images/lejania1.jpg" alt="">
+                <div class="contenido">
+                    <div class="titulo"><h1>RYAN CASTRO anuncia el remix de “LEJANIA” sin BLESSED</h1></div>
+                    <div class="escritor"><h5>por JHOAN SARMIENTO</h5></div>
+                    <br>
+                    <div class="descripcion"><p>Para nadie es un secreto que la versión original de este sencillo fue todo un éxito, 
+                        alcanzando en plataformas como You Tube alrededor de 11 millones de reproducciones, para dos talentos 
+                        relativamente nuevos que poco a poco están encaminándose en lograr un puesto en las grandes ligas de la
+                        música urbana.</p></div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </a>
+        
+    </div>
+    <br>
+    <br><br>
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="newsletter_container">
+                <div class="newsletter_title"><h2>Suscribete y mantente al tanto de todo lo nuevo.</h2></div>
+                <form action="bd/registro-de-correo" method="post" id="newsletter_form" class="newsletter_form">
+                    <input type="email" class="newsletter_input" name="correo" id="correo" placeholder="Correo Electrónico" required="required">
+                    <button class="newsletter_button" >ENVIAR</button>
+                </form>
+            </div>
+                <!-- NUESTROS LINKS -->
+                <div class="footer_list">
+                    <div class="footer_list_title">NUESTROS <br>LINKS</div>
+                    <form id="nuestros-links" v-cloak>
+                        <ul>
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                           </li> 
+                       </ul>
+                   </form>
+                </div>
+                <!-- CANALES -->
+                <div class="footer_list">
+                    <div class="footer_list_title">CANALES</div>
+                    <form id="nuestros-canales" v-cloak>
+                        <ul>
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                           </li> 
+                       </ul>
+                   </form>
+                </div>
+                <!-- CONNECTIVIDAD -->
+                <div class="footer_list">
+                    <div class="footer_list_title">CONTACTO</div>
+                     <form id="contacto" v-cloak>
+                        <ul>
+                            <li v-for="article in filteredArticles">
+                                <a href="#" v-bind:href="article.url">
+                                   <p>{{article.title}}</p>
+                                </a>
+                           </li> 
+                       </ul>
+                   </form>
+                </div>
+            
+        </div>
+        <div class="copyright_bar">
+            <span>
+               &copy;2020 Explosivo G Entertainment | Todos los Derechos Reservados.
+            </span>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+    <script src="js/menu-scroll.js"></script>
+    <script src="js/MENU-URLS.js"></script>
+</body>
+</html>
